@@ -1,0 +1,7 @@
+pip install python-chess
+pip install numpy
+pip install gpiozero
+pip install art
+pip install pigpio
+pip install tk
+pip install Pillow==9.5.0
