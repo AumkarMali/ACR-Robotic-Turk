@@ -37,7 +37,7 @@ def evaluate(board, programColor, programMoveCtr):
         npMatrixBoard = np.asarray(matrixBoard)
         blackKingPos, whiteKingPos = np.argwhere(npMatrixBoard == 'k'), np.argwhere(npMatrixBoard == 'K')
 
-        # check surrounding pieces of king both black and white
+        #Check surrounding pieces of kings both black and white
         def sp(row, col, npMatrixBoard):
             pieces = []
             for dr in [-1, 0, 1]:
@@ -185,13 +185,9 @@ while not board.is_game_over():
                 f.write(str(best_move) + '\n')
             
             if pieceExistPlayer:
-                continue
-                #piece_remove_move(str(best_move), True)
-                #move_arm(str(best_move))
+                piece_remove_move(str(best_move), True)
+                move_arm(str(best_move))
             else:
-                continue
-                #move_arm(str(best_move))
+                move_arm(str(best_move))
 
-
-print("Game over")
-print("Result:", board.result())
+tprint("Game   over")
