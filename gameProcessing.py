@@ -153,12 +153,10 @@ while not board.is_game_over():
                 board.push_uci(move)
 
                 if pieceExistEnemy:
-                    continue
-                    #piece_remove(move, False)
-                    #move_arm(move)
+                    piece_remove(move, False)
+                    move_arm(move)
                 else:
-                    continue
-                    #move_arm(move)
+                    move_arm(move)
             except:
                 continue
 
