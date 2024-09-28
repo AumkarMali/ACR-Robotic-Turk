@@ -1,8 +1,10 @@
 
 # ARC: Python & Raspberry Pi Chess Robot
 
-### Introduction
+### Introduction & Goal
 The acronym stands for Automated Chess Robot, which represents the system's ability to move in three-dimensional space with the assistance of a Chess AI. Users can engage with the system virtually through a built-in graphical user interface (GUI), while the system replicates the board movements in real life. The objective of this extensive project was to integrate my knowledge of data structures and algorithms (DSA) and game theory algorithms with my understanding of electromechanical systems.
+
+#### Minimax w/Alpha Beta Pruning Explanation
 
 
 
