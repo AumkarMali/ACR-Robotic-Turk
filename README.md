@@ -19,7 +19,13 @@ The function is then recursively called with parameters indicating that it is th
 Pruning refers to the process of stopping the evaluation of certain branches in the game tree. This happens when we determine that continuing to explore those branches cannot possibly influence the final decision about which move to make. If the maximizing player finds that their best guaranteed score (alpha) is greater than or equal to what the minimizing player could allow (beta), they can safely prune the branch. Conversely, if the minimizing player finds that they can guarantee a score that is lower than or equal to what the maximizing player can achieve (alpha), they can also prune.
 
     
-  
+##GUI
+
+Tkinter library was used to create a chess board that mimics the real-life chess board that the robot plays on, and allows users to input their moves. The `draw_board()` function iterates through the board setup from the chess library and adds the pieces to each ssquare of the board after each move. 
+
+![Description of the image](https://ibb.co/mb2dqt1)
+
+
 ### Robotic Arm
 
 Movement to specific squares on the chess board are defined in controlMovements.json:
