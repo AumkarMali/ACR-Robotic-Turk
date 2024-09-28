@@ -64,5 +64,22 @@ Movement to specific squares on the chess board are defined in controlMovements.
 ```
 Values can be changes based on size of board used. For testing, chess board of size 30.5cm x 30.5 cm was used.
 
+## Circuit Schematic
 [![Screenshot](https://i.ibb.co/4T75RhJ/Screenshot-2024-09-28-112310.png)](https://ibb.co/vPHK40D)
+
+
+## Authors
+
+- [@AumkarMali](https://ibb.co/X4hXB1d)
+
+
+## Deployment
+
+Download Arduino IDE from https://docs.arduino.cc/software/ide-v1/tutorials/Windows
+
+## Links
+
+➊ Github: https://github.com/AumkarMali/
+
+➋ Youtube: https://www.youtube.com/channel/UC7rhCKur9bF01lV0pNJNkvA
 
