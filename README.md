@@ -16,8 +16,7 @@ The function is then recursively called with parameters indicating that it is th
 
 #### Alpha-Beta Pruning
 
-If the maximizing player finds that their best guaranteed score (alpha) is greater than or equal to what the minimizing player could allow (beta), they can safely prune the branch.
-Conversely, if the minimizing player finds that they can guarantee a score that is lower than or equal to what the maximizing player can achieve (alpha), they can also prune.
+Pruning refers to the process of stopping the evaluation of certain branches in the game tree. This happens when we determine that continuing to explore those branches cannot possibly influence the final decision about which move to make. If the maximizing player finds that their best guaranteed score (alpha) is greater than or equal to what the minimizing player could allow (beta), they can safely prune the branch. Conversely, if the minimizing player finds that they can guarantee a score that is lower than or equal to what the maximizing player can achieve (alpha), they can also prune.
 
     
   
