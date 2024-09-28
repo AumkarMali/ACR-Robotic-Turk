@@ -29,7 +29,13 @@ Tkinter library was used to create a chess board that mimics the real-life chess
 
 
 ## Front-end and back-end communication, subprocesses and threading
+In terms of the GUI, a threading event is created and an update function calls the GUI to update the board and then signals that the update is complete by calling `update_event.set()`
 
+Next the computer waits for the users move (after waiting for the board update to complete), which will be displayed in a text file. Once the program gets the users move from this file. This is done through 2 threads that individually update the board, and wait for the users move and react.
+
+The program is run from `run.py`, which individually runs the back-end algorithm and the GUI, ensuring that they can communicate using the text file.
+
+WARNING: These subprocesses, if not manually stopped (e.g., task manager), can take up a lot of memory from the computer.
 
 ### Robotic Arm
 
