@@ -9,8 +9,9 @@ The concept of the minimax algorithm is to maximize a specified player's score i
 
 Currently, the program controls the black pieces, while the user controls the white pieces. The user will first make a move on the board. Subsequently, the chess library will generate a list of possible moves that black can make and randomly select one from that list (this serves as a placeholder of sorts).
 
-`moves = list(board.generate_legal_moves())
-best_move = random.choice(moves) if moves else None`
+`moves = list(board.generate_legal_moves())`
+
+`best_move = random.choice(moves) if moves else None`
 
 
 ### Robotic Arm
