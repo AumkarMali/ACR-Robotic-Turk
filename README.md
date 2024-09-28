@@ -28,6 +28,8 @@ Tkinter library was used to create a chess board that mimics the real-life chess
 
 
 
+## Front-end and back-end communication, subprocesses and threading
+
 
 ### Robotic Arm
 
