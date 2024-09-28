@@ -5,9 +5,12 @@
 The acronym stands for Automated Chess Robot, which represents the system's ability to move in three-dimensional space with the assistance of a Chess AI. Users can engage with the system virtually through a built-in graphical user interface (GUI), while the system replicates the board movements in real life. The objective of this extensive project was to integrate my knowledge of data structures and algorithms (DSA) and game theory algorithms with my understanding of electromechanical systems.
 
 ## Minimax w/Alpha Beta Pruning Explanation
-The idea of the minimax algorithm is that a specified player's score in any sort of 2 player game should be maximized. The score in this case refers to a `evaluation function`, which will be disscussed in depth below. 
+The concept of the minimax algorithm is to maximize a specified player's score in any two-player game. In this context, the score refers to an  which will be discussed in detail below.
 
-the
+Currently, the program controls the black pieces, while the user controls the white pieces. The user will first make a move on the board. Subsequently, the chess library will generate a list of possible moves that black can make and randomly select one from that list (this serves as a placeholder of sorts).
+
+`moves = list(board.generate_legal_moves())
+    best_move = random.choice(moves) if moves else None`
 
 
 ### Robotic Arm
