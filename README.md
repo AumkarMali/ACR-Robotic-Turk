@@ -10,8 +10,11 @@ The concept of the minimax algorithm is to maximize a specified player's score i
 Currently, the program controls the black pieces, while the user controls the white pieces. The user will first make a move on the board. Subsequently, the chess library will generate a list of possible moves that black can make and randomly select one from that list (this serves as a placeholder of sorts).
 
 `moves = list(board.generate_legal_moves())`
-
 `best_move = random.choice(moves) if moves else None`
+
+The function is then recursively called with parameters indicating that it is the next player's turn and decrementing the depth, which is the number of recursions (or future moves) that are going to be done for every possible scenario. Eventually, the depth will be 0, and the evaluation function will be returned, indicating the score of the program's move decision. That score will be compared to a local minimum value (-INFINITY) throughout the iterations of all possible moves, so the program knows what the best move to make is by the end of its recursions. It is important to note that the outer call will explore a certain move and return a score for that path. The outer call will then take the score returned from this path and compare it with scores from other paths. Each recursive call operates on its own state of the board after a move has been pushed. When you call pop, it removes the last move, so all inner calls will not affect the outer calls or other inner calls. This ensures that each recursive exploration is independent.
+
+
 
 
 ### Robotic Arm
