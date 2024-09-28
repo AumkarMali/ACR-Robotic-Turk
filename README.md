@@ -23,7 +23,8 @@ Pruning refers to the process of stopping the evaluation of certain branches in 
 
 Tkinter library was used to create a chess board that mimics the real-life chess board that the robot plays on, and allows users to input their moves. The `draw_board()` function iterates through the board setup from the chess library and adds the pieces to each ssquare of the board after each move. 
 
-![Description of the image](https://ibb.co/mb2dqt1)
+[![Description of the image](https://i.ibb.co/jbQqMGB/Screenshot-2024-09-28-110514.png)](https://ibb.co/mb2dqt1)
+
 
 
 ### Robotic Arm
