@@ -5,7 +5,9 @@
 The acronym stands for Automated Chess Robot, which represents the system's ability to move in three-dimensional space with the assistance of a Chess AI. Users can engage with the system virtually through a built-in graphical user interface (GUI), while the system replicates the board movements in real life. The objective of this extensive project was to integrate my knowledge of data structures and algorithms (DSA) and game theory algorithms with my understanding of electromechanical systems.
 
 ## Minimax w/Alpha Beta Pruning Explanation
+The idea of the minimax algorithm is that a specified player's score in any sort of 2 player game should be maximized. The score in this case refers to a `evaluation function`, which will be disscussed in depth below. 
 
+the
 
 
 ### Robotic Arm
