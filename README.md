@@ -23,6 +23,7 @@ Pruning refers to the process of stopping the evaluation of certain branches in 
 Scores are calculated by summing up pieces from both the white and black sides of the board, where each piece has a different weight. In addition to this linear method of evaluating each side's boards, a defensive strategy was implemented by searching through the nearest pieces near each player's kings. After finding each of these surrounding pieces and weighing them accordingly, their values are squared, multiplied by a small scalar, and multiplied by another variable called timed kind defense. This variable is incremented after each move the program makes in order to time its defensive behavior near the middle of the game rather than the beginning. Changing the magnitude of this value will vary the effect of the program's defensive behavior, while decrementing it will lead to a highly aggressive program behavior.
 
 ![Chess Piece Scoring Example](https://i.ibb.co/W0p9q7w/Screenshot-2024-10-03-024815.png)
+Linear function is the summation of all the scores of various pieces for n pieces.
     
 ## GUI
 
