@@ -18,7 +18,7 @@ The function is then recursively called with parameters indicating that it is th
 
 Pruning refers to the process of stopping the evaluation of certain branches in the game tree. This happens when we determine that continuing to explore those branches cannot possibly influence the final decision about which move to make. If the maximizing player finds that their best guaranteed score (alpha) is greater than or equal to what the minimizing player could allow (beta), they can safely prune the branch. Conversely, if the minimizing player finds that they can guarantee a score that is lower than or equal to what the maximizing player can achieve (alpha), they can also prune.
 
-## Non-linear Evaluation Function
+## Linear + Non-linear Evaluation Function
 
 Scores are calculated by summing up pieces from both the white and black sides of the board, where each piece has a different weight. In addition to this linear method of evaluating each side's boards, a defensive strategy was implemented by searching through the nearest pieces near each player's kings. After finding each of these surrounding pieces and weighing them accordingly, their values are squared, multiplied by a small scalar, and multiplied by another variable called timed kind defense. This variable is incremented after each move the program makes in order to time its defensive behavior near the middle of the game rather than the beginning. Changing the magnitude of this value will vary the effect of the program's defensive behavior, while decrementing it will lead to a highly aggressive program behavior.
 
@@ -28,6 +28,10 @@ Linear function is the summation of all the scores of various pieces for n piece
 
 
 ![Chess Board Example](https://i.ibb.co/gwfgNk8/Screenshot-2024-10-03-025348.png)
+
+A non-linear function squares the summation of the i-th piece surrounding the king with some defined score. It then multiplies it by a scalar and (n⋅x), where x is the increment/decrement value and n is a whole number (representing the number of program moves).
+
+
 
     
 ## GUI
